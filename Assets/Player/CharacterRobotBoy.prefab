@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 6100000}
   - component: {fileID: 1428413357882601586}
+  - component: {fileID: 6921484848545305150}
   m_Layer: 0
   m_Name: CharacterRobotBoy
   m_TagString: Player
@@ -208,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d7b34a3bb2d4e4b926e7e729d3d410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraFlipScript: {fileID: 0}
 --- !u!61 &6100000
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -244,6 +246,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7bbdc4a25a06994aae2beccaadee165, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSplatter: {fileID: 0}
+--- !u!114 &6921484848545305150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08b11aa4a3c6374fbe07ff34097e833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &100004
