@@ -31,7 +31,7 @@ namespace UnityStandardAssets._2D
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 cameraFlipScript.FlipCamera();
-                InvertHorizontal();
+                //InvertHorizontal();
             }
         }
 
