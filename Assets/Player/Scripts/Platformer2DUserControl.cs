@@ -27,6 +27,12 @@ namespace UnityStandardAssets._2D
                 // Read the jump input in Update so button presses aren't missed.
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
+
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                cameraFlipScript.FlipCamera();
+                InvertHorizontal();
+            }
         }
 
 
@@ -38,15 +44,7 @@ namespace UnityStandardAssets._2D
             // Pass all parameters to the character control script.
             m_Character.Move(h, crouch, m_Jump);
             m_Jump = false;
-
-            if (Input.GetKeyDown(KeyCode.LeftShift))
-            {
-                cameraFlipScript.FlipCamera();
-                InvertHorizontal();
-            }
         }
-
-
 
         public void InvertHorizontal()
         {
