@@ -4,9 +4,10 @@ using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets._2D
 {
-    [RequireComponent(typeof (PlatformerCharacter2D))]
+    [RequireComponent(typeof(PlatformerCharacter2D))]
     public class Platformer2DUserControl : MonoBehaviour
     {
+        public CameraFlip cameraFlipScript;
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
         private int invertedHor;
@@ -25,6 +26,12 @@ namespace UnityStandardAssets._2D
             {
                 // Read the jump input in Update so button presses aren't missed.
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+            }
+
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                cameraFlipScript.FlipCamera();
+                //InvertHorizontal();
             }
         }
 

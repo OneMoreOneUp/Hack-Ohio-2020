@@ -6,20 +6,12 @@ public class CameraFlip : MonoBehaviour
     public Transform m_Camera;
     public GameObject player;
 
-    void FixedUpdate()
+    public void FlipCamera()
     {
-        if(Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            FlipCamera();
-            ChangePlayerLayer();
-            FlipSortOrder();
-            player.GetComponent<Platformer2DUserControl>().InvertHorizontal();
-        }
-    }
+        FlipSortOrder();
+        player.GetComponent<Player2DCollision>().FlipSide();
 
-    private void FlipCamera()
-    {
-        m_Camera.transform.eulerAngles -= new Vector3(0, 180, 0);
+/*        m_Camera.transform.eulerAngles -= new Vector3(0, 180, 0);
 
         if(m_Camera.position.z > 0)
         {
@@ -28,23 +20,7 @@ public class CameraFlip : MonoBehaviour
         else
         {
             m_Camera.position += new Vector3(0, 0, 20);
-        }
-    }
-
-    private void ChangePlayerLayer()
-    {
-        if(player.layer == 9)
-        {
-            player.layer = 10;
-        }
-        else if (player.layer == 10)
-        {
-            player.layer = 9;
-        }
-        else
-        {
-            Debug.LogError("[Error] Unable to change player layer.");
-        }
+        }*/
     }
 
     private void FlipSortOrder()
