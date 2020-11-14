@@ -1080,7 +1080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8331067122537324832, guid: e20547b4c388d144f867cd078dfd24ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.41
+      value: 1.18
       objectReference: {fileID: 0}
     - target: {fileID: 8331067122537324832, guid: e20547b4c388d144f867cd078dfd24ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1114,9 +1114,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8331067122537324833, guid: e20547b4c388d144f867cd078dfd24ad, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331067122537324833, guid: e20547b4c388d144f867cd078dfd24ad, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -524125293
+      objectReference: {fileID: 0}
     - target: {fileID: 8331067122537324835, guid: e20547b4c388d144f867cd078dfd24ad, type: 3}
       propertyPath: m_Name
       value: Block
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331067122537324835, guid: e20547b4c388d144f867cd078dfd24ad, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331067122537324835, guid: e20547b4c388d144f867cd078dfd24ad, type: 3}
+      propertyPath: m_TagString
+      value: Trap
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e20547b4c388d144f867cd078dfd24ad, type: 3}
