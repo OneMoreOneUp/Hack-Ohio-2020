@@ -7,6 +7,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player2DCollision : MonoBehaviour
 {
     public ParticleSystem bloodSplatter;
+
     private enum Sides {A, B};
     private Sides side;
     private bool isDead = false;
@@ -53,6 +54,7 @@ public class Player2DCollision : MonoBehaviour
         transform.position = new Vector3(0, 0, 0);
         GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<Platformer2DUserControl>().enabled = true;
+        isDead = false;
     }
 
     public void FlipSide()
