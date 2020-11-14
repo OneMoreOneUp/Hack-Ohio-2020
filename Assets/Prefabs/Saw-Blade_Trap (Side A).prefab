@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2535550038849190632}
   - component: {fileID: -9031063529191860125}
   m_Layer: 9
-  m_Name: Saw-Blade_Trap
+  m_Name: Saw-Blade_Trap (Side A)
   m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,7 +107,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
