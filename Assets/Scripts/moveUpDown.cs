@@ -4,36 +4,32 @@ using UnityEngine;
 
 public class moveUpDown : MonoBehaviour
 {
-    //startPos = the lowest y position. endPos = the highest y position
-    float moveSpeed = 4f, endPos = 7, startPos = 0; 
+    //highestPos = the highest y position. lowestPos = the lowest y position
+    public float moveSpeed = 5f, highestPos = 0, lowestPos = 0; 
     bool moveRight = true;
 
     // Update is called once per frame
     void Update()
     {
-
-        if (transform.position.y < endPos)
+        if (transform.position.y < lowestPos)
         {
             moveRight = true;
         }
-        if (transform.position.y > startPos)
+        if (transform.position.y > highestPos)
         {
             moveRight = false;
-            //switch values of the above startPos & endPos
-            startPos = 7;
-            endPos = 0;
         }
 
         if (moveRight)
         {
             transform.position = new Vector2(transform.position.x ,
-                transform.position.y+ moveSpeed * Time.deltaTime);
+                transform.position.y + moveSpeed * Time.deltaTime);
         }
         else
         {
             transform.position =
                        new Vector2(transform.position.x,
-                           transform.position.y- moveSpeed * Time.deltaTime);
+                           transform.position.y - moveSpeed * Time.deltaTime);
         }
     }
 

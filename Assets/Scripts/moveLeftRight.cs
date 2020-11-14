@@ -5,24 +5,20 @@ using UnityEngine;
 public class moveLeftRight : MonoBehaviour
 {
 
-    //startPos = the leftmost x position. endPos = the rightmost x position
-    float moveSpeed = 4f, endPos = -10f, startPos = -17f;
+    //rightPos = the rightmost x position. leftPos = the leftmost x position
+    public float moveSpeed = 5f, rightPos = 0f, leftPos = 0f;
     bool moveRight = true;
 
     // Update is called once per frame
     void Update()
     {
-
-        if (transform.position.x < endPos)
+        if (transform.position.x < leftPos)
         {
             moveRight = true;
         }
-        if (transform.position.x > startPos)
+        if (transform.position.x > rightPos)
         {
             moveRight = false;
-            //switch values of the above startPos & endPos
-            startPos = -10f;
-            endPos = -17f;
         }
 
         if(moveRight){

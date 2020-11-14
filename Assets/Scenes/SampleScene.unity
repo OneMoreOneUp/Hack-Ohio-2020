@@ -272,7 +272,7 @@ SpriteRenderer:
   m_Size: {x: 2.5, y: 0.625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &333644322
@@ -306,23 +306,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f30e5ec0c02694d92117fd537feac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5
+  highestPos: 5
+  lowestPos: 0
 --- !u!1 &489979126 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
   m_PrefabInstance: {fileID: 665127781}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &489979127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489979126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 253bfc10538e26245b7df9c8aa1390e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &489979134 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 3}
@@ -804,7 +795,7 @@ SpriteRenderer:
   m_Size: {x: 2.5, y: 0.625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &804791953
@@ -963,7 +954,7 @@ SpriteRenderer:
   m_Size: {x: 2.5, y: 0.625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1021014701
@@ -6128,7 +6119,7 @@ SpriteRenderer:
   m_Size: {x: 2.5, y: 0.625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1744224165
@@ -6277,6 +6268,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2210e229d822abf499fdb4f836afbc6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rightPos: 5
+  leftPos: 0
 --- !u!1001 &2035536419
 PrefabInstance:
   m_ObjectHideFlags: 0
