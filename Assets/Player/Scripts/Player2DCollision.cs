@@ -53,6 +53,7 @@ public class Player2DCollision : MonoBehaviour
         transform.position = new Vector3(0, 0, 0);
         GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<Platformer2DUserControl>().enabled = true;
+        isDead = false;
     }
 
     public void FlipSide()
