@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 5366358844011058574}
   - component: {fileID: 2535550038849190632}
   - component: {fileID: -9031063529191860125}
+  - component: {fileID: -530870861873727512}
+  - component: {fileID: 634145324301404911}
   m_Layer: 10
   m_Name: Saw-Blade_Trap (Side B)
   m_TagString: Trap
@@ -113,3 +115,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.4
+--- !u!114 &-530870861873727512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130691662346424711}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f30e5ec0c02694d92117fd537feac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  highestPos: 0
+  lowestPos: 0
+--- !u!114 &634145324301404911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130691662346424711}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2210e229d822abf499fdb4f836afbc6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rightPos: 0
+  leftPos: 0
