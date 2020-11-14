@@ -6,7 +6,7 @@ public class CameraFlip : MonoBehaviour
     public Transform m_Camera;
     public GameObject player;
 
-    void FixedUpdate()
+    void Update()
     {
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
