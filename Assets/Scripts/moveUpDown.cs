@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets._2D;
 
 public class moveUpDown : MonoBehaviour
 {
@@ -32,6 +33,5 @@ public class moveUpDown : MonoBehaviour
                            transform.position.y - moveSpeed * Time.deltaTime);
         }
     }
-
 
 }
