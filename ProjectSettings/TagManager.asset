@@ -57,3 +57,6 @@ TagManager:
   - name: Player
     uniqueID: 10073583
     locked: 0
+  - name: SideC
+    uniqueID: 2718183275
+    locked: 0
