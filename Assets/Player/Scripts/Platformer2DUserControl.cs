@@ -7,7 +7,7 @@ namespace UnityStandardAssets._2D
     [RequireComponent(typeof(PlatformerCharacter2D))]
     public class Platformer2DUserControl : MonoBehaviour
     {
-        public CameraFlip cameraFlipScript;
+        public LayerFlip cameraFlipScript;
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
         private int invertedHor;

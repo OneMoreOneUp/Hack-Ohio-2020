@@ -7,6 +7,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player2DCollision : MonoBehaviour
 {
     public ParticleSystem bloodSplatter;
+
     private enum Sides {A, B};
     private Sides side;
     private bool isDead = false;
