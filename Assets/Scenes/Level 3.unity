@@ -1800,7 +1800,7 @@ GameObject:
   - component: {fileID: 1522596087}
   - component: {fileID: 1522596086}
   m_Layer: 0
-  m_Name: Controller
+  m_Name: LayerController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
