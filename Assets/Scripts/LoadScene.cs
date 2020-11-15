@@ -22,4 +22,10 @@ public class LoadScene : MonoBehaviour
         //Reload the scene.
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void LoadLast()
+    {
+        //Load the last scene.
+        SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+    }
 }
