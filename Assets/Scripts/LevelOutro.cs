@@ -10,6 +10,7 @@ public class LevelOutro: MonoBehaviour
     private RectTransform handRect, whiteRect, canvasRect;
     private int directionScalar = -1;
     public LoadScene sceneLoader;
+    public AudioSource eraseSound;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -17,6 +18,7 @@ public class LevelOutro: MonoBehaviour
         handRect = hand.GetComponent<RectTransform>();
         whiteRect = white.GetComponent<RectTransform>();
         canvasRect = canvas.GetComponent<RectTransform>();
+        eraseSound.Play();
     }
 
     // Update is called once per frame
@@ -30,31 +32,25 @@ public class LevelOutro: MonoBehaviour
 
     private void Transition()
     {
-        MoveHand();
         MoveWhite();
         CheckDone();
     }
 
-    private void MoveHand()
+    private void MoveWhite()
     {
-        handRect.position += new Vector3(xSpeed * Time.deltaTime, directionScalar * ySpeed * Time.deltaTime, 0);
+        whiteRect.position += new Vector3(xSpeed * Time.deltaTime, directionScalar * ySpeed * Time.deltaTime, 0);
         SetYSclar();
     }
 
     private void SetYSclar()
     {
-        Vector3[] handWorldCoords = new Vector3[4], whiteWorldCoords = new Vector3[4];
+        Vector3[] handWorldCoords = new Vector3[4], canvasWorldCoords = new Vector3[4];
         handRect.GetWorldCorners(handWorldCoords);
-        whiteRect.GetWorldCorners(whiteWorldCoords);
-        float handTop = handWorldCoords[1].y, whiteTop = whiteWorldCoords[1].y, whiteBot = whiteWorldCoords[0].y, whiteHeight = whiteTop - whiteBot;
+        canvasRect.GetWorldCorners(canvasWorldCoords);
+        float handTop = handWorldCoords[1].y, canvasTop = canvasWorldCoords[1].y, canvasBot = canvasWorldCoords[0].y, canvasHeight = canvasTop - canvasBot;
 
-        if (handTop >= whiteTop) directionScalar = -1;
-        else if (handTop <= whiteBot + (whiteHeight / 4)) directionScalar = 1;
-    }
-
-    private void MoveWhite()
-    {
-        whiteRect.position += new Vector3(xSpeed * Time.deltaTime, 0, 0);
+        if (handTop >= canvasTop) directionScalar = -1;
+        else if (handTop <= canvasBot + (canvasHeight / 4)) directionScalar = 1;
     }
 
     private void CheckDone()
@@ -69,6 +65,7 @@ public class LevelOutro: MonoBehaviour
         {
             started = false;
             sceneLoader.LoadNext();
+            eraseSound.Stop();
         }
     }
 }

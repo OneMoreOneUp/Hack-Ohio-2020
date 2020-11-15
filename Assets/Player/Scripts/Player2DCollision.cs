@@ -41,8 +41,6 @@ public class Player2DCollision : MonoBehaviour
         bloodSplatter.Play();
         GetComponent<SpriteRenderer>().enabled = false; //Hide body
         GetComponent<Platformer2DUserControl>().enabled = false;
-        GetComponent<BoxCollider2D>().enabled = false;
-        GetComponent<Rigidbody2D>().isKinematic = false;
         isDead = true;
         bloodSplat.Play();
     }
@@ -53,8 +51,6 @@ public class Player2DCollision : MonoBehaviour
         transform.rotation = new Quaternion();
         GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<Platformer2DUserControl>().enabled = true;
-        GetComponent<BoxCollider2D>().enabled = true;
-        GetComponent<Rigidbody2D>().isKinematic = true;
         isDead = false;
     }
 
