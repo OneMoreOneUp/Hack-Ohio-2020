@@ -17,7 +17,6 @@ public class LevelOutro: MonoBehaviour
         handRect = hand.GetComponent<RectTransform>();
         whiteRect = white.GetComponent<RectTransform>();
         canvasRect = canvas.GetComponent<RectTransform>();
-        xSpeed *= -1;
     }
 
     // Update is called once per frame

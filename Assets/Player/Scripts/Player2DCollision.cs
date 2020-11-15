@@ -7,6 +7,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player2DCollision : MonoBehaviour
 {
     public ParticleSystem bloodSplatter;
+    public Transform respawn;
 
     private enum Sides {A, B};
     private Sides side;
@@ -51,7 +52,7 @@ public class Player2DCollision : MonoBehaviour
 
     private void Revive()
     {
-        transform.position = new Vector3(0, 0, 0);
+        transform.position = respawn.position;
         GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<Platformer2DUserControl>().enabled = true;
         isDead = false;

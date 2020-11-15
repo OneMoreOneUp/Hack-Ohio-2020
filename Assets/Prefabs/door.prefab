@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5013834293105667801}
   - component: {fileID: 5013834293105667806}
   - component: {fileID: 3096276873381976006}
+  - component: {fileID: 5152810953998991403}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -93,7 +94,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.27555364, y: -0.012237668}
@@ -109,3 +110,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9981594, y: 1.8613057}
   m_EdgeRadius: 0
+--- !u!114 &5152810953998991403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5013834293105667807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9300c0dec7c1ae4bbd56c967b1d5cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 0}
+  white: {fileID: 0}
+  canvas: {fileID: 0}
+  xSpeed: 10
+  ySpeed: 75
+  sceneLoader: {fileID: 0}
