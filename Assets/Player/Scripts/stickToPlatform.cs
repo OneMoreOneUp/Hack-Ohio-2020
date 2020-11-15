@@ -26,7 +26,7 @@ public class stickToPlatform : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y);
+        rb.velocity = new Vector2(dirX, rb.velocity.y);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

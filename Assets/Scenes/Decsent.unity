@@ -489,7 +489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   rightPos: 30
-  leftPos: 1
+  leftPos: 2
   currentPos: 0
 --- !u!1001 &215216095
 PrefabInstance:
