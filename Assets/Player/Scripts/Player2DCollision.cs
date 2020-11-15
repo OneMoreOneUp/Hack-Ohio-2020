@@ -10,8 +10,8 @@ public class Player2DCollision : MonoBehaviour
     public Transform respawn;
     public AudioSource bloodSplat;
 
-    private enum Sides {A, B};
-    private Sides side;
+    public enum Sides {A, B};
+    public Sides side;
     private bool isDead = false;
 
     private void Awake()
