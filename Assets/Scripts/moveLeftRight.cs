@@ -9,7 +9,7 @@ public class moveLeftRight : MonoBehaviour
     //rightPos = the rightmost x position. leftPos = the leftmost x position
 
     
-    public float moveSpeed = 5f, rightPos = 0f, leftPos = 0f,currentPos = 0f;
+    public float moveSpeed = 5f, rightPos = 0f, leftPos = 0f,currentPos = 0;
 
     bool moveRight = true;
 
