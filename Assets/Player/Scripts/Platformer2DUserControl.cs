@@ -8,6 +8,7 @@ namespace UnityStandardAssets._2D
     public class Platformer2DUserControl : MonoBehaviour
     {
         public LayerFlip cameraFlipScript;
+        public AudioSource crumpleSound;
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
         private int invertedHor;
@@ -31,6 +32,7 @@ namespace UnityStandardAssets._2D
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 cameraFlipScript.FlipCamera();
+                crumpleSound.Play();
                 //InvertHorizontal();
             }
         }

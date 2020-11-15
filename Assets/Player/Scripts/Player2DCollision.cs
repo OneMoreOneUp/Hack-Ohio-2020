@@ -8,9 +8,10 @@ public class Player2DCollision : MonoBehaviour
 {
     public ParticleSystem bloodSplatter;
     public Transform respawn;
+    public AudioSource bloodSplat;
 
-    private enum Sides {A, B};
-    private Sides side;
+    public enum Sides {A, B};
+    public Sides side;
     private bool isDead = false;
 
     private void Awake()
@@ -24,15 +25,8 @@ public class Player2DCollision : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.R))
         {
-            if (isDead)
-            {
+                if(!isDead) Die();
                 Revive();
-            }
-            else
-            {
-                Die();
-                Revive();
-            }
         }
     }
 
@@ -48,11 +42,13 @@ public class Player2DCollision : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = false; //Hide body
         GetComponent<Platformer2DUserControl>().enabled = false;
         isDead = true;
+        bloodSplat.Play();
     }
 
     private void Revive()
     {
         transform.position = respawn.position;
+        transform.rotation = new Quaternion();
         GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<Platformer2DUserControl>().enabled = true;
         isDead = false;
