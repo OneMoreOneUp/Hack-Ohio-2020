@@ -42,25 +42,4 @@ public class moveLeftRight : MonoBehaviour
                            transform.position.y);
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider == collision.gameObject.tag.Equals("Player"))
-        {
-            collision.collider.transform.SetParent(transform);
-
-            collision.gameObject.GetComponent<PlatformerCharacter2D>().m_MaxSpeed = 60f;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.collider == collision.gameObject.tag.Equals("Player"))
-        {
-            collision.collider.transform.SetParent(null);
-            collision.gameObject.GetComponent<PlatformerCharacter2D>().m_MaxSpeed = 10f;
-        }
-    }
-
-
 }
