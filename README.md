@@ -5,4 +5,3 @@ A 2D shifting perspective game made in 40 hours for the Hack Ohi/o Hackathon (20
 - Matthew Anakin Crabtree
 - Deakon Ziegler
 - Zheng Ji Tan
-- Krysten Holmes
