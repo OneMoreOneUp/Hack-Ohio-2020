@@ -1,12 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityStandardAssets._2D;
+﻿using UnityEngine;
 
 public class moveUpDown : MonoBehaviour
 {
     //highestPos = the highest y position. lowestPos = the lowest y position
-    public float moveSpeed = 5f, highestPos = 0f, lowestPos = 0f, currentPos = 0f; 
+    public float moveSpeed = 5f, highestPos = 0f, lowestPos = 0f, currentPos = 0f;
     bool moveUp = true;
 
     private void Start()
@@ -30,7 +27,7 @@ public class moveUpDown : MonoBehaviour
 
         if (moveUp)
         {
-            transform.position = new Vector2(transform.position.x ,
+            transform.position = new Vector2(transform.position.x,
                 transform.position.y + moveSpeed * Time.deltaTime);
         }
         else

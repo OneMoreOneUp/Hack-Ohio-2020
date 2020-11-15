@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class LevelOutro: MonoBehaviour
+public class LevelOutro : MonoBehaviour
 {
     public GameObject hand, white, canvas;
     public float xSpeed = 1, ySpeed = 1;

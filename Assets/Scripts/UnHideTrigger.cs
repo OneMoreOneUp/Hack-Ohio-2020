@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class UnHideTrigger : MonoBehaviour
 {
@@ -8,7 +6,7 @@ public class UnHideTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        foreach(GameObject obj in objects)
+        foreach (GameObject obj in objects)
         {
             obj.SetActive(true);
         }
