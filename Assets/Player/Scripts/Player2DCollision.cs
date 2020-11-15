@@ -9,6 +9,7 @@ public class Player2DCollision : MonoBehaviour
     public ParticleSystem bloodSplatter;
     public Transform respawn;
     public AudioSource bloodSplat;
+    private Vector3 deathPos;
 
     public enum Sides {A, B};
     public Sides side;
@@ -28,6 +29,10 @@ public class Player2DCollision : MonoBehaviour
                 if(!isDead) Die();
                 Revive();
         }
+        else if (isDead)
+        {
+            transform.position = deathPos;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -41,7 +46,9 @@ public class Player2DCollision : MonoBehaviour
         bloodSplatter.Play();
         GetComponent<SpriteRenderer>().enabled = false; //Hide body
         GetComponent<Platformer2DUserControl>().enabled = false;
+        GetComponent<PlatformerCharacter2D>().enabled = false;
         isDead = true;
+        deathPos = transform.position;
         bloodSplat.Play();
     }
 
@@ -51,6 +58,7 @@ public class Player2DCollision : MonoBehaviour
         transform.rotation = new Quaternion();
         GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<Platformer2DUserControl>().enabled = true;
+        GetComponent<PlatformerCharacter2D>().enabled = true;
         isDead = false;
     }
 
