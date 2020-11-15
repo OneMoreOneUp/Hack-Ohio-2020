@@ -9,6 +9,15 @@ public class LoadScene : MonoBehaviour
     {
         //Load scene based on the sceneIndex integer, which is set in editor.
         SceneManager.LoadScene(sceneIndex);
+
+        //If the index is 0 which is the main menu.
+        if (sceneIndex == 0)
+        {
+            foreach (GameObject obj in Object.FindObjectsOfType<GameObject>())
+            {
+                Destroy(obj);
+            }
+        }
     }
 
     public void LoadNext()
