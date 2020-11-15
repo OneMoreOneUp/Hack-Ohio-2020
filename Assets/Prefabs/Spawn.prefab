@@ -41,13 +41,13 @@ GameObject:
   - component: {fileID: 6533558724918722938}
   - component: {fileID: 6533558724918722939}
   - component: {fileID: 6533558724918722940}
-  - component: {fileID: 6533558724918722941}
   - component: {fileID: 6533558724918722942}
   - component: {fileID: 6533558724918722943}
   - component: {fileID: 6533558724918722912}
   - component: {fileID: 6533558724918722913}
   - component: {fileID: 6533558724918722914}
   - component: {fileID: 6533558724918722915}
+  - component: {fileID: 7687640081643914462}
   m_Layer: 8
   m_Name: CharacterRobotBoy
   m_TagString: Player
@@ -141,22 +141,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &6533558724918722941
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6533558724918722916}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.45}
-  serializedVersion: 2
-  m_Radius: 0.16
 --- !u!50 &6533558724918722942
 Rigidbody2D:
   serializedVersion: 4
@@ -223,7 +207,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.065}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -234,7 +218,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.68}
+  m_Size: {x: 0.25, y: 1.08}
   m_EdgeRadius: 0
 --- !u!114 &6533558724918722914
 MonoBehaviour:
@@ -250,6 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodSplatter: {fileID: 0}
   respawn: {fileID: 6533558725842436589}
+  bloodSplat: {fileID: 0}
 --- !u!114 &6533558724918722915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,6 +247,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c08b11aa4a3c6374fbe07ff34097e833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!81 &7687640081643914462
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6533558724918722916}
+  m_Enabled: 1
 --- !u!1 &6533558725336706977
 GameObject:
   m_ObjectHideFlags: 0
