@@ -1220,7 +1220,7 @@ RectTransform:
   m_Children:
   - {fileID: 479990461}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1471,8 +1471,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Camera: {fileID: 519420032}
   player: {fileID: 489979126}
-  parentA: {fileID: 0}
-  parentB: {fileID: 0}
+  parentA: {fileID: 1524550541}
+  parentB: {fileID: 13078356}
 --- !u!4 &1522596087
 Transform:
   m_ObjectHideFlags: 0

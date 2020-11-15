@@ -1958,11 +1958,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4093788603731015752, guid: 14ce6b818ff4a674c82da9f08e10a525, type: 3}
       propertyPath: leftPos
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4093788603731015752, guid: 14ce6b818ff4a674c82da9f08e10a525, type: 3}
       propertyPath: rightPos
-      value: 17
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4093788603731015752, guid: 14ce6b818ff4a674c82da9f08e10a525, type: 3}
       propertyPath: startPos
