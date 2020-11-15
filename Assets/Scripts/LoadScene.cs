@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;      //Used for working with Scenes.
 
 public class LoadScene : MonoBehaviour
@@ -9,6 +7,15 @@ public class LoadScene : MonoBehaviour
     {
         //Load scene based on the sceneIndex integer, which is set in editor.
         SceneManager.LoadScene(sceneIndex);
+
+        //If the index is 0 which is the main menu.
+        if (sceneIndex == 0)
+        {
+            foreach (GameObject obj in Object.FindObjectsOfType<GameObject>())
+            {
+                Destroy(obj);
+            }
+        }
     }
 
     public void LoadNext()

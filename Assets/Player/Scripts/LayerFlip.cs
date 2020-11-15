@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityStandardAssets._2D;
 
 public class LayerFlip : MonoBehaviour
 {
@@ -15,9 +14,9 @@ public class LayerFlip : MonoBehaviour
 
     private void FlipSortOrder(GameObject parent)
     {
-        foreach(SpriteRenderer renderer in parent.GetComponentsInChildren<SpriteRenderer>())
+        foreach (SpriteRenderer renderer in parent.GetComponentsInChildren<SpriteRenderer>())
         {
-            if(renderer.sortingLayerName == "SideA")
+            if (renderer.sortingLayerName == "SideA")
             {
                 renderer.sortingLayerName = "SideB";
             }
@@ -30,7 +29,7 @@ public class LayerFlip : MonoBehaviour
 
     private void Awake()
     {
-        SetSortOrder();   
+        SetSortOrder();
     }
 
     public void SetSortOrder()

@@ -1,15 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityStandardAssets._2D;
+﻿using UnityEngine;
 
 public class moveLeftRight : MonoBehaviour
 {
 
     //rightPos = the rightmost x position. leftPos = the leftmost x position
 
-    
-    public float moveSpeed = 5f, rightPos = 0f, leftPos = 0f,currentPos = 0;
+
+    public float moveSpeed = 5f, rightPos = 0f, leftPos = 0f, currentPos = 0;
 
     bool moveRight = true;
 
@@ -26,17 +23,20 @@ public class moveLeftRight : MonoBehaviour
         if (transform.position.x < newLeftPos)
         {
             moveRight = true;
-            
+
         }
         if (transform.position.x > newRightPos)
         {
             moveRight = false;
         }
 
-        if(moveRight){
+        if (moveRight)
+        {
             transform.position = new Vector2(transform.position.x + moveSpeed * Time.deltaTime,
                 transform.position.y);
-        }else{
+        }
+        else
+        {
             transform.position =
                        new Vector2(transform.position.x - moveSpeed * Time.deltaTime,
                            transform.position.y);

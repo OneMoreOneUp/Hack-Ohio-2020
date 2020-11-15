@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityStandardAssets._2D;
-using UnityStandardAssets.CrossPlatformInput;
 
 public class Player2DCollision : MonoBehaviour
 {
@@ -11,7 +8,7 @@ public class Player2DCollision : MonoBehaviour
     public AudioSource bloodSplat;
     private Vector3 deathPos;
 
-    public enum Sides {A, B};
+    public enum Sides { A, B };
     public Sides side;
     private bool isDead = false;
 
@@ -24,10 +21,10 @@ public class Player2DCollision : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))
         {
-                if(!isDead) Die();
-                Revive();
+            if (!isDead) Die();
+            Revive();
         }
         else if (isDead)
         {
@@ -64,7 +61,7 @@ public class Player2DCollision : MonoBehaviour
 
     public void FlipSide()
     {
-        if(side == Sides.A)
+        if (side == Sides.A)
         {
             side = Sides.B;
             Physics2D.IgnoreLayerCollision(8, 9, true);

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class BloodSplatParticle : MonoBehaviour
@@ -13,7 +12,7 @@ public class BloodSplatParticle : MonoBehaviour
     {
         ParticlePhysicsExtensions.GetCollisionEvents(m_particleSystem, other, collisionEvents);
 
-        foreach(ParticleCollisionEvent collisionEvent in collisionEvents)
+        foreach (ParticleCollisionEvent collisionEvent in collisionEvents)
         {
             GameObject bloodSplat = Instantiate(bloodSplatPrefab, collisionEvent.intersection, Quaternion.identity) as GameObject;
             bloodSplat.transform.SetParent(bloodParent, true);
