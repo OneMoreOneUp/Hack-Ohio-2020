@@ -7,11 +7,11 @@ public class moveUpDown : MonoBehaviour
 {
     //highestPos = the highest y position. lowestPos = the lowest y position
     public float moveSpeed = 5f, highestPos = 0f, lowestPos = 0f, currentPos = 0f; 
-    bool moveRight = true;
+    bool moveUp = true;
 
-    private void Awake()
+    private void Start()
     {
-        currentPos = transform.position.x;
+        currentPos = transform.position.y;
     }
 
     // Update is called once per frame
@@ -21,14 +21,14 @@ public class moveUpDown : MonoBehaviour
 
         if (transform.position.y < newlowestPos)
         {
-            moveRight = true;
+            moveUp = true;
         }
         if (transform.position.y > newhighestPos)
         {
-            moveRight = false;
+            moveUp = false;
         }
 
-        if (moveRight)
+        if (moveUp)
         {
             transform.position = new Vector2(transform.position.x ,
                 transform.position.y + moveSpeed * Time.deltaTime);
