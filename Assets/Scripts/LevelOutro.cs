@@ -15,10 +15,18 @@ public class LevelOutro: MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         started = true;
+        EnableWipe();
         handRect = hand.GetComponent<RectTransform>();
         whiteRect = white.GetComponent<RectTransform>();
         canvasRect = canvas.GetComponent<RectTransform>();
         eraseSound.Play();
+    }
+
+    public void EnableWipe()
+    {
+        canvas.SetActive(true);
+        white.SetActive(true);
+        hand.SetActive(true);
     }
 
     // Update is called once per frame

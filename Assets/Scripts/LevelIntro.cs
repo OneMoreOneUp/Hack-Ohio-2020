@@ -13,11 +13,19 @@ public class LevelIntro : MonoBehaviour
 
     public void Awake()
     {
+        EnableWipe();
         started = true;
         handRect = hand.GetComponent<RectTransform>();
         whiteRect = white.GetComponent<RectTransform>();
         canvasRect = canvas.GetComponent<RectTransform>();
         scribbleSound.Play();
+    }
+
+    public void EnableWipe()
+    {
+        canvas.SetActive(true);
+        white.SetActive(true);
+        hand.SetActive(true);
     }
 
     // Update is called once per frame
