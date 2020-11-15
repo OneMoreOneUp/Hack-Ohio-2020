@@ -561,8 +561,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  rightPos: 30
-  leftPos: 2
+  rightPos: 0
+  leftPos: 32
   currentPos: 0
 --- !u!1001 &215216095
 PrefabInstance:
@@ -1481,11 +1481,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4628976805243766407, guid: 95e1651f44ca42c49b82a17765f17921, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.366074
+      value: 45.21
       objectReference: {fileID: 0}
     - target: {fileID: 4628976805243766407, guid: 95e1651f44ca42c49b82a17765f17921, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.48999977
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 4628976805243766407, guid: 95e1651f44ca42c49b82a17765f17921, type: 3}
       propertyPath: m_LocalPosition.z
