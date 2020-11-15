@@ -347,7 +347,8 @@ PrefabInstance:
       propertyPath: highestPos
       value: 11
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4093788603731015752, guid: 14ce6b818ff4a674c82da9f08e10a525, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 14ce6b818ff4a674c82da9f08e10a525, type: 3}
 --- !u!4 &136806822 stripped
 Transform:
@@ -611,6 +612,11 @@ PrefabInstance:
 --- !u!198 &346143534 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1089438467145157362, guid: 1a3e6e917bbdb554b91a1fd7b4f0ec18, type: 3}
+  m_PrefabInstance: {fileID: 346143533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &346143535 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2759366102765867223, guid: 1a3e6e917bbdb554b91a1fd7b4f0ec18, type: 3}
   m_PrefabInstance: {fileID: 346143533}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &401714676
@@ -1057,6 +1063,10 @@ PrefabInstance:
       propertyPath: cameraFlipScript
       value: 
       objectReference: {fileID: 1522596086}
+    - target: {fileID: 6533558724918722914, guid: 584a94eb146626244b7a192c0af02fb3, type: 3}
+      propertyPath: bloodSplat
+      value: 
+      objectReference: {fileID: 346143535}
     - target: {fileID: 6533558724918722914, guid: 584a94eb146626244b7a192c0af02fb3, type: 3}
       propertyPath: bloodSplatter
       value: 
@@ -1995,7 +2005,8 @@ PrefabInstance:
       propertyPath: highestPos
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4093788603731015752, guid: 14ce6b818ff4a674c82da9f08e10a525, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 14ce6b818ff4a674c82da9f08e10a525, type: 3}
 --- !u!4 &1645121211 stripped
 Transform:

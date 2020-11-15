@@ -128,7 +128,7 @@ PlatformEffector2D:
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
-  m_SurfaceArc: 360
+  m_SurfaceArc: 180
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
@@ -197,6 +197,7 @@ MonoBehaviour:
   moveSpeed: 5
   highestPos: 0
   lowestPos: 0
+  currentPos: 0
 --- !u!114 &4093788603731015752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,3 +213,4 @@ MonoBehaviour:
   moveSpeed: 5
   rightPos: 0
   leftPos: 0
+  currentPos: 0

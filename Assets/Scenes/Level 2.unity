@@ -1820,6 +1820,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1522596086}
     - target: {fileID: 6533558724918722914, guid: 584a94eb146626244b7a192c0af02fb3, type: 3}
+      propertyPath: bloodSplat
+      value: 
+      objectReference: {fileID: 1089438468241354297}
+    - target: {fileID: 6533558724918722914, guid: 584a94eb146626244b7a192c0af02fb3, type: 3}
       propertyPath: bloodSplatter
       value: 
       objectReference: {fileID: 1325311178}
@@ -2584,6 +2588,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a3e6e917bbdb554b91a1fd7b4f0ec18, type: 3}
+--- !u!82 &1089438468241354297 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2759366102765867223, guid: 1a3e6e917bbdb554b91a1fd7b4f0ec18, type: 3}
+  m_PrefabInstance: {fileID: 1089438468241354296}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3500725156056798813
 PrefabInstance:
   m_ObjectHideFlags: 0
